@@ -1,7 +1,10 @@
-export default function Email() {
+import React from "react";
+import RegisterForm from "@/app/ui/auth/Register/RegisterForm";
+
+export default function RegisterPage() {
   return (
     <div>
-      <h1>Email Registration Page</h1>
+      <RegisterForm/>
     </div>
   );
 }
