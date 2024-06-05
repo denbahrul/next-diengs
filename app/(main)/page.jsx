@@ -1,12 +1,11 @@
-import Homestays from "../ui/main/home/homestays";
-
+import RecenlyBooked from "@/app/ui/main/home/recenly-booked";
 
 export default function Home() {
-
   return (
     <>
-    <h1>Home Page</h1>
-    <Homestays />
+      <section>
+        <RecenlyBooked />
+      </section>
     </>
   );
 }
