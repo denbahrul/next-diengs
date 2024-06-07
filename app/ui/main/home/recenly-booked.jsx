@@ -19,6 +19,14 @@ export default async function RecenlyBooked() {
       <section>
         <p className="mx-4 pt-4 font-bold">Recenly Booked</p>
         <RoomCard />
+        <RoomCard />
+        <RoomCard />
+        <RoomCard />
+        <RoomCard />
+        <RoomCard />
+        <RoomCard />
+        <RoomCard />
+        <RoomCard />
       </section>
     </>
   );

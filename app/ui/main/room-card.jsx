@@ -16,17 +16,16 @@ export default function RoomCard({ image }) {
           <p className="font-bold">President Hotel</p>
           <p className="text-xs text-abu2">Paris, France</p>
           <p className="text-xs text-abu2">
-            ⭐ <span className="font-semibold text-hijau">4.5</span> &ensp;
-            (4378 reviews)
+            ⭐ <span className="font-bold text-hijau">4.5</span> (4.378 reviews)
           </p>
         </div>
         <div className="flex w-2/12 flex-col justify-between py-2 text-center">
           <p className="leading-none">
-            <span className="font-bold text-hijau">$35</span>
+            <span className="text-[20px] font-bold text-hijau">$35</span>
             <br />
             <span className="mx-auto -mt-1 text-[10px] text-abu2">/ night</span>
           </p>
-          <BsBookmarkDashFill className="mx-auto text-hijau" fontSize={20} />
+          <BsBookmarkDashFill className="mx-auto text-hijau" fontSize={22} />
         </div>
       </div>
     </>
