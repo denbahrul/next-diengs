@@ -8,7 +8,7 @@ import { BsBell } from "react-icons/bs";
 export default function Home() {
   return (
     <>
-      <header className="m-4">
+      <header className="m-6">
         <div className="flex justify-between">
           <Image
             className="w-1/3 bg-cover"
@@ -26,7 +26,7 @@ export default function Home() {
         <p className="my-6 text-3xl font-semibold">Hello, Traveller 👋</p>
         <input
           type="text"
-          className="w-full rounded-xl bg-abu p-4 focus:outline-hijau"
+          className="w-full rounded-xl bg-abu p-3 focus:outline-hijau"
           placeholder="Search"
         />
       </header>

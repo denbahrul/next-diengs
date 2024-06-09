@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function RoomCard({ image }) {
   return (
     <>
-      <div className="m-4 flex rounded-2xl bg-putih p-4">
+      <div className="my-4 flex rounded-2xl bg-putih p-4">
         <Image
           className="m-auto aspect-square w-3/12 rounded-2xl object-cover"
           src="/homestay.png" //{image}
