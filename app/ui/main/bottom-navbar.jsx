@@ -2,7 +2,7 @@ import { BsHouseExclamation } from "react-icons/bs";
 export default function BottomNavbar() {
   return (
     <>
-      <div className="sticky bottom-0 m-4 flex w-full justify-between p-4 backdrop-blur-lg">
+      <div className="fixed bottom-0 flex w-full max-w-[420px] justify-between bg-background p-4">
         <p>Home</p>
         <p>Search</p>
         <p>Booking</p>

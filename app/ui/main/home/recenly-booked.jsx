@@ -1,4 +1,4 @@
-import RoomCard from "@/app/ui/main/room-card";
+import RoomCard from "@/app/ui/main/room-card-list";
 // async function getData() {
 //   const res = await fetch("http://localhost:8000/v1/homestays");
 //   // The return value is *not* serialized
@@ -17,16 +17,14 @@ export default async function RecenlyBooked() {
   return (
     <>
       <section>
-        <p className="mx-4 pt-4 font-bold">Recenly Booked</p>
+        <div className="flex flex-row justify-between">
+          <p className="mx-4 pt-4 font-semibold">Recenly Booked</p>
+          <p className="mx-4 pt-4 text-hijau">See all</p>
+        </div>
         <RoomCard />
         <RoomCard />
         <RoomCard />
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
+        <div className="h-10 w-full"></div>
       </section>
     </>
   );

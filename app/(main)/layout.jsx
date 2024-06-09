@@ -1,13 +1,13 @@
-import BottomNavbar from "../ui/main/home/bottom-navbar";
+import BottomNavbar from "@/app/ui/main/bottom-navbar";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
       <body>
-        <main className="m-auto h-screen max-w-[420px] bg-background">
+        <section className="top-0 m-auto h-screen max-w-[420px] bg-background">
           {children}
           <BottomNavbar />
-        </main>
+        </section>
       </body>
     </html>
   );

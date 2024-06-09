@@ -5,7 +5,7 @@ export default function RoomCard({ image }) {
     <>
       <div className="m-4 flex rounded-2xl bg-putih p-4">
         <Image
-          className="m-auto aspect-square w-3/12 rounded-2xl"
+          className="m-auto aspect-square w-3/12 rounded-2xl object-cover"
           src="/homestay.png" //{image}
           width={0}
           height={0}
@@ -25,7 +25,7 @@ export default function RoomCard({ image }) {
             <br />
             <span className="mx-auto -mt-1 text-[10px] text-abu2">/ night</span>
           </p>
-          <BsBookmarkDashFill className="mx-auto text-hijau" fontSize={22} />
+          <BsBookmarkDashFill className="mx-auto text-hijau" fontSize={20} />
         </div>
       </div>
     </>
