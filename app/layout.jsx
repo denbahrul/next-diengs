@@ -2,11 +2,11 @@ import { Be_Vietnam_Pro } from "next/font/google";
 import "./ui/globals.css";
 
 const vietnam = Be_Vietnam_Pro({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Diengs.id",
