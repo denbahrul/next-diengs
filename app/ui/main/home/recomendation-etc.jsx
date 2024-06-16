@@ -18,7 +18,7 @@ export default function RecomendationEtc() {
             <button className="m-1 whitespace-pre rounded-full border-2 border-hijau px-4 py-1 text-sm text-hijau hover:bg-hijau hover:text-putih">
               Favorites
             </button>
-            <button className="m-1 mr-3 whitespace-pre rounded-full border-2 border-hijau px-4 py-1 text-sm text-hijau hover:bg-hijau hover:text-putih">
+            <button className="m-1 mr-5 whitespace-pre rounded-full border-2 border-hijau px-4 py-1 text-sm text-hijau hover:bg-hijau hover:text-putih">
               Best Sellers
             </button>
           </div>

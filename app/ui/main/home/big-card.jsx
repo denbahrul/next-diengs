@@ -1,4 +1,4 @@
-import { BsBookmarkDash } from "react-icons/bs";
+import { HiOutlineBookmark } from "react-icons/hi2";
 import Image from "next/image";
 export default function BigCard() {
   return (
@@ -23,7 +23,7 @@ export default function BigCard() {
               <span className="text-lg font-bold">$29</span>
               <span className="text-sm">/ per night</span>
             </p>
-            <BsBookmarkDash className="text-putih" fontSize={24} />
+            <HiOutlineBookmark className="text-putih" size={24} />
           </div>
         </div>
       </div>

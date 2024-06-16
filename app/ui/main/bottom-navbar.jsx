@@ -1,4 +1,3 @@
-import { BsHouseExclamation } from "react-icons/bs";
 export default function BottomNavbar() {
   return (
     <>

@@ -1,4 +1,4 @@
-import BottomNavbar from "@/app/ui/main/bottom-navbar";
+import BottomNavbar from "../ui/main/bottom-navbar";
 
 export default function RootLayout({ children }) {
   return (
