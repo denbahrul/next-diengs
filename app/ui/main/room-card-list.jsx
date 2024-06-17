@@ -1,9 +1,9 @@
-import { BsBookmarkDashFill } from "react-icons/bs";
+import { HiBookmark } from "react-icons/hi2";
 import Image from "next/image";
 export default function RoomCard({ image }) {
   return (
     <>
-      <div className="m-4 flex rounded-2xl bg-putih p-4">
+      <div className="my-4 flex rounded-2xl bg-putih p-4 shadow-2xl shadow-background">
         <Image
           className="m-auto aspect-square w-3/12 rounded-2xl object-cover"
           src="/homestay.png" //{image}
@@ -25,7 +25,7 @@ export default function RoomCard({ image }) {
             <br />
             <span className="mx-auto -mt-1 text-[10px] text-abu2">/ night</span>
           </p>
-          <BsBookmarkDashFill className="mx-auto text-hijau" fontSize={20} />
+          <HiBookmark className="mx-auto text-hijau" size={24} />
         </div>
       </div>
     </>

@@ -16,15 +16,15 @@ export default async function RecenlyBooked() {
   // const homestays = await getData();
   return (
     <>
-      <section>
+      <section className="mx-6 my-4">
         <div className="flex flex-row justify-between">
-          <p className="mx-4 pt-4 font-semibold">Recenly Booked</p>
-          <p className="mx-4 pt-4 text-hijau">See all</p>
+          <p className="font-semibold">Recenly Booked</p>
+          <p className="text-hijau">See all</p>
         </div>
         <RoomCard />
         <RoomCard />
         <RoomCard />
-        <div className="h-10 w-full"></div>
+        <div className="h-12 w-full"></div>
       </section>
     </>
   );
