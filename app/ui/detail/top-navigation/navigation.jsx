@@ -2,6 +2,10 @@ import Link from "next/link";
 import { BsArrowLeftShort, BsBoxArrowUp, BsBookmark } from "react-icons/bs";
 
 export default function Navigation() {
+  const seeImage = () => {
+    document.querySelector('#shareOption').classList.remove('hidden');
+  };
+
   return (
     <div className="lg:hidden">
       <div className="fixed top-0 right-0 left-0 z-30 mx-auto flex justify-between p-4 lg:max-w-5xl">
@@ -14,7 +18,13 @@ export default function Navigation() {
           <div className="mx-2 rounded-full bg-putih p-2 opacity-90">
             <BsBookmark size={17} />
           </div>
-          <div className="rounded-full bg-putih p-2 opacity-90">
+          <div 
+            className="rounded-full bg-putih p-2 opacity-90"
+            onClick={seeImage}
+            onKeyPress={seeImage}
+            role="button"
+            tabIndex="0"
+          >
             <BsBoxArrowUp size={17} />
           </div>
         </div>

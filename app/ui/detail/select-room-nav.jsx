@@ -5,10 +5,10 @@ export default function SelectRoomNav() {
           <p className="text-xs text-abu2">Harga Mulai</p>
           <div className="flex">
             <p className="font-bold text-hijau">Rp. 350.000</p>
-            <p className="pt-0.5 text-sm">/malam</p>
+            <p className="pt-1 text-xs text-abu2">/malam</p>
           </div>
         </div>
-        <a href="#kamar" className="my-0 rounded-lg bg-hijau py-2.5 px-7">
+        <a href="#kamar" className="my-0 rounded-full bg-hijau py-2.5 px-7">
           <p className="text-sm text-putih">Pilih Kamar</p>
         </a>
       </div>

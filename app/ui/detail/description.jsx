@@ -2,7 +2,7 @@ import { HiStar, HiLocationMarker, HiOutlineBookmark } from "react-icons/hi";
 
 export default function Description() {
     return (
-        <section className="mx-3 pb-6">
+      <section className="mx-3 pb-6">
         <div className="mt-5 flex justify-between">
           <h2 className="text-xl font-bold lg:text-3xl">Homestay Langit Senja</h2>
           <div className="hidden rounded-lg border-0 bg-kuning px-6 py-2 lg:flex">
@@ -12,19 +12,11 @@ export default function Description() {
             <p className="text-base font-semibold text-putih">Favorit</p>
           </div>
         </div>
-        <div className="my-1 flex">
-          <div className="inline-flex">
-            <div className="inline-flex lg:pt-0.5">
-              <HiStar color="#FFC700" size={18} />
-            </div>
-            <p className="inline-flex px-1 text-xs lg:text-base">4.3</p>
+        <div className="inline-flex pt-2">
+          <div className="inline-flex lg:pt-0.5">
+            <HiLocationMarker color="#009933" size={18} />
           </div>
-          <div className="inline-flex px-5">
-            <div className="inline-flex lg:pt-0.5">
-              <HiLocationMarker color="#FF3C3C" size={18} />
-            </div>
-            <p className="inline-flex px-1 text-xs lg:text-base">Patak Banteng, Dieng</p>
-          </div>
+          <p className="inline-flex px-1 text-xs text-abu2 lg:text-base">Patak Banteng, Dieng</p>
         </div>
         <p className="my-5 text-sm lg:text-base">
           Lorem ipsum dolor sit amet consectetur. Ipsum hac accumsan congue faucibus nibh. Viverra
