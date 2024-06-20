@@ -9,8 +9,8 @@ const links = [
     href: "/orders",
   },
   {
-    name: "Pending",
-    href: "/orders/pending",
+    name: "Ongoing",
+    href: "/orders/ongoing",
   },
   {
     name: "Completed",
@@ -31,9 +31,12 @@ export default function OrdersNavbar() {
           <Link
             key={link.name}
             href={link.href}
-            className={clsx("rounded-full border-hijau px-3 py-1 text-hijau", {
-              "bg-hijau text-putih": pathname === link.href,
-            })}
+            className={clsx(
+              "rounded-full border-hijau px-3 py-1 text-hijau transition-all",
+              {
+                "bg-hijau text-putih": pathname === link.href,
+              },
+            )}
           >
             {link.name}
           </Link>

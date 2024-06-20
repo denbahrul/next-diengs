@@ -1,3 +1,5 @@
+import All from "@/app/ui/main/Orders/all";
+
 export default function Orders() {
-  return <h1>Orders</h1>;
+  return <All />;
 }

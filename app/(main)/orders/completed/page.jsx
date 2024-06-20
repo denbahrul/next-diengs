@@ -1,3 +1,5 @@
-export default function Completed() {
-  return <h1>Completed Orders</h1>;
+import Completed from "@/app/ui/main/Orders/completed";
+
+export default function Pege() {
+  return <Completed />;
 }

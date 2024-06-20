@@ -10,7 +10,7 @@ export default function Favorite() {
           <h2 className="my-auto font-bold">My Bookmark</h2>
         </div>
         <div className="flex text-abu2">
-          <HiOutlineQueueList size={24} className="my-auto" />
+          <HiOutlineQueueList size={24} className="my-auto mr-4" />
           <HiOutlineViewGrid size={24} className="my-auto" />
         </div>
       </nav>
