@@ -4,16 +4,16 @@ import { HiOutlineQueueList, HiQueueList } from "react-icons/hi2";
 export default function Favorite() {
   return (
     <>
-      <header className="m-6 flex flex-row justify-between">
+      <nav className="m-6 flex flex-row justify-between">
         <div className="flex">
           <BackToPreviewsPage />
           <h2 className="my-auto font-bold">My Bookmark</h2>
         </div>
         <div className="flex text-abu2">
-          <HiOutlineQueueList size={24} className="my-auto" />
+          <HiOutlineQueueList size={24} className="my-auto mr-4" />
           <HiOutlineViewGrid size={24} className="my-auto" />
         </div>
-      </header>
+      </nav>
       <section></section>
     </>
   );

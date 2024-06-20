@@ -22,7 +22,9 @@ module.exports = {
       biru2: "#1976D2",
       biru3: "#E9EDF3",
       hijau: "#009933",
+      hijau2: "#d7f8e7",
       merah: "#FF3D00",
+      merah2: "#fdddde",
       background: "#f7f7f7",
     },
     extend: {
