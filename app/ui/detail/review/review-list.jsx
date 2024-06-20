@@ -5,18 +5,15 @@ export default function ReviewList() {
   return (
     <section className="relative z-10 bg-putih px-3 pt-8">
       <div className="my-4 flex justify-between">
-        <h3 className="text-md font-bold lg:text-xl">Ulasan</h3>
-        <p className="text-xs font-medium text-biru">Lihat Semua</p>
+        <div className="flex justify-between">
+        <p className="text-md mr-2 font-bold lg:text-xl">Ulasan</p>
+        <HiStar color="#FFC700" size={20} />
+        <p className="text-sm font-bold text-hijau mx-1">4.3</p>
+        <p className="text-xs mt-0.5 font-normal text-abu2">(20 Ulasan)</p>
       </div>
-      <div className="flex justify-between">
-        <div className="flex">
-          <HiStar color="#FFC700" size={30} />
-          <p className="mx-1 pt-0.5 text-lg font-bold">4.3</p>
-          <p className="py-2 text-xs font-normal text-abu2">(20 Ulasan)</p>
-        </div>
-        <p className="my-1 rounded-md bg-abu p-1 px-3 text-xs font-normal">Sangat Bagus</p>
+        <p className="text-xs font-semibold text-hijau">Lihat Semua</p>
       </div>
-      <div className="my-4 divide-y divide-abu">
+      <div className="my-4">
         <Review />
         <Review />
         <Review />
