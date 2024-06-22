@@ -12,23 +12,6 @@ export default function OrdersLayout({ children }) {
         <nav className="mt-4 flex justify-between">
           <OrdersNavbar />
         </nav>
-
-        {/* <nav className="mt-4 bg-abu2">
-          <ul className="flex justify-between">
-            <li>
-              <Link href="/orders">All</Link>
-            </li>
-            <li>
-              <Link href="/orders/pending">Pending</Link>
-            </li>
-            <li>
-              <Link href="/orders/completed">Completed</Link>
-            </li>
-            <li>
-              <Link href="/orders/canceled">Canceled</Link>
-            </li>
-          </ul>
-        </nav> */}
         <section className="mt-4">{children}</section>
       </div>
     </>
