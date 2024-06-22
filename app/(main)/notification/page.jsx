@@ -1,9 +1,10 @@
 import BackToPreviewsPage from "@/app/ui/main/bact-to-previews";
+import Notification from "@/app/ui/main/notification/notification";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
 export default function Favorite() {
   return (
     <>
-      <header className="m-6 flex flex-row justify-between">
+      <nav className="m-6 flex flex-row justify-between">
         <div className="flex">
           <BackToPreviewsPage />
           <h2 className="my-auto font-bold">Notification</h2>
@@ -11,8 +12,10 @@ export default function Favorite() {
         <div className="flex text-abu2">
           <HiOutlineDotsCircleHorizontal size={24} className="my-auto" />
         </div>
-      </header>
-      <section></section>
+      </nav>
+      <section className="mx-6">
+        <Notification />
+      </section>
     </>
   );
 }
