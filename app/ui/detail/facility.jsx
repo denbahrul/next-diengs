@@ -2,7 +2,7 @@ import { BsWifi, BsTv, BsCup } from "react-icons/bs";
 
 export default function Facility() {
   return (
-    <section className="mx-3">
+    <section className="mx-5">
       <h3 className="text-base font-bold lg:text-xl">Fasilitas</h3>
       <div className="my-3 grid grid-cols-5 gap-3 lg:grid-cols-6">
         <div className="my-2 lg:flex">
