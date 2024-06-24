@@ -8,7 +8,7 @@ export default function BookPage() {
   return (
     <div className="max-w-[420px] mx-auto">
       <Header />
-      <div className="px-4 bg-putih">
+      <div className="mx-6 bg-putih">
         <div className="my-3 flex">
           <div className="w-16 h-16 lg:w-40 lg:h-40 rounded-lg bg-[url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')] bg-cover" />
           <div className="ml-4 pt-3 grow">
@@ -24,25 +24,8 @@ export default function BookPage() {
             <p className="text-sm font-bold mt-4 mb-2">Tanggal</p>
             <p className="text-xs font-medium mt-4 mb-2">31 Jan - 4 Feb 2024</p>
           </div>
-          <DatePicker />
         </div>
-        <div>
-          <div className="flex justify-between">
-            <p className="text-sm font-bold mt-4 mb-2">Jumlah Tamu</p>
-            <p className="text-xs font-medium mt-4 mb-2">4 Tamu</p>
-          </div>
-          <form className="p-4 rounded-2xl border-[1px] border-biru3">
-          <div className="flex py-2.5">
-      <div className="py-0.5">
-        <BsFillDashSquareFill size={18} />
-      </div>
-      <p className="px-3 text-base"> 2 </p>
-      <div className="py-0.5">
-        <BsPlusSquareFill size={18} />
-      </div>
-    </div>
-          </form>
-        </div>
+        <NumberOfGuest/>
         {/* <div>
           <p className="text-sm font-bold mt-8 mb-2">No. Telepon</p>
           <form className="p-4 rounded-md shadow-md">
