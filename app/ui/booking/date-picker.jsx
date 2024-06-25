@@ -21,17 +21,21 @@ export default function DatePicker() {
   };
 
   return (
+  <div className='pt-2'>
+    <p className="text-sm font-bold mt-4 mb-2">Pilih Tanggal</p>
     <div className="flex flex-col items-center mb-6">
-      <DateRange
-        locale={id}
-        ranges={[selectionRange]}
-        onChange={handleSelect}
-        minDate={new Date()}
-        rangeColors={['#009933']}
-        showDateDisplay={false}  // Hides the default date display
-        weekdayDisplayFormat="E" // Shows weekdays as single letter
-        monthDisplayFormat="MMMM yyyy" // Custom format for month display
-      />
+      <div className='rounded-lg border-2 border-biru3 w-full flex justify-center mb-2'>
+        <DateRange
+          locale={id}
+          ranges={[selectionRange]}
+          onChange={handleSelect}
+          minDate={new Date()}
+          rangeColors={['#009933']}
+          showDateDisplay={false}  // Hides the default date display
+          weekdayDisplayFormat="E" // Shows weekdays as single letter
+          monthDisplayFormat="MMMM yyyy" // Custom format for month display
+        />
+      </div>
       <div className='flex justify-between w-full'>
         <p className="text-sm font-bold w-full">Check in</p>
         <div className='flex items-center px-4'> 
@@ -65,5 +69,6 @@ export default function DatePicker() {
         </div>
       </div>
     </div>
+  </div>
   );
 }

@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Header from '@/app/ui/booking/header';
 import DatePicker from '@/app/ui/booking/date-picker';
 import NumberOfGuest from '@/app/ui/booking/number-of-guest';
-import { BsFillDashSquareFill, BsPlusSquareFill } from 'react-icons/bs';
 
 export default function BookPage() {
   return (
@@ -19,17 +18,15 @@ export default function BookPage() {
             <p className="py-5 text-sm text-hijau"><u>Ubah</u></p>
           </Link>
         </div>
-        <div className='pt-2'>
-          <p className="text-sm font-bold mt-4 mb-2">Tanggal</p>
-          <DatePicker/>
-        </div>
+        <DatePicker/>
         <NumberOfGuest/>
-        {/* <div>
-          <p className="text-sm font-bold mt-8 mb-2">No. Telepon</p>
-          <form className="p-4 rounded-md shadow-md">
-            <input className="w-full border-b-[1.5px]" type="text" name="" id="note" placeholder="" />
+        <div>
+          <p className="text-sm font-bold mt-8 mb-2">Nama Reservasi</p>
+          <form>
+            <input className="bg-[#f7f7f7] mb-4 py-4 px-5 w-full rounded-lg text-sm focus:bg-[#dfffea] focus:ring-1 focus:ring-hijau focus:outline-none" type="text" name="" id="email" placeholder="Nama" required/>
+            <input className="bg-[#f7f7f7] py-4 px-5 w-full rounded-lg text-sm focus:bg-[#dfffea] focus:ring-1 focus:ring-hijau focus:outline-none" type="text" name="" id="email" placeholder="No Handphone" required/>
           </form>
-        </div> */}
+        </div>
       </div>
       <div className="p-3 pb-4 mt-8 bg-putih justify-betweenw-6xl mx-auto">
         <p className="mb-3 text-center font-bold text-md text-hitam">Total: Rp.700.000</p>
