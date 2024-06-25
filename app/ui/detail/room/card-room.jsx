@@ -46,7 +46,7 @@ export default function CardRoom() {
         <p className="font-bold text-hijau">Rp. 350.000</p>
         <p className="pt-0.5 text-sm">/malam</p>
       </div>
-      <Link href="ApplyForRentPage">
+      <Link href="booking">
         <div className="mt-1 rounded-lg bg-hijau p-2">
           <p className="text-center text-xs font-medium text-putih">Ajukan Sewa</p>
         </div>

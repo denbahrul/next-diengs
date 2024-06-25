@@ -8,7 +8,7 @@ export default function Navigation() {
 
   return (
     <div className="lg:hidden">
-      <div className="fixed top-0 right-0 left-0 z-30 mx-auto flex justify-between p-4 lg:max-w-5xl">
+      <div className="fixed top-0 right-0 left-0 z-30 mx-auto flex justify-between p-4 max-w-[420px]">
         <Link href="HomePage">
           <div className="rounded-full bg-putih p-0.5 opacity-90">
             <BsArrowLeftShort size={29} />
@@ -29,8 +29,8 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-      <div className="fixed top-0 left-0 right-0 z-20 mx-auto bg-putih p-4 lg:max-w-5xl">
-        <p className="pt-1 pl-12 text-left font-medium">Homstay Langit Senja</p>
+      <div className="fixed top-0 left-0 right-0 z-20 mx-auto bg-putih p-4 max-w-[420px]">
+        <p className="pt-1 pl-12 text-left font-bold">Homstay Langit Senja</p>
       </div>
     </div>
   );
