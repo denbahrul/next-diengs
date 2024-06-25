@@ -24,7 +24,7 @@ export default function DatePicker() {
   <div className='pt-2'>
     <p className="text-sm font-bold mt-4 mb-2">Pilih Tanggal</p>
     <div className="flex flex-col items-center mb-6">
-      <div className='rounded-lg border-2 border-biru3 w-full flex justify-center mb-2'>
+      <div className='rounded-lg border-2 border-biru3 w-full flex justify-center mb-4'>
         <DateRange
           locale={id}
           ranges={[selectionRange]}
