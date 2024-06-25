@@ -32,7 +32,7 @@ export default function OrdersNavbar() {
             key={link.name}
             href={link.href}
             className={clsx(
-              "rounded-full border-hijau px-3 py-1 text-hijau transition-all",
+              "rounded-full border-hijau px-3 py-1 text-hijau transition-all duration-200 ease-in",
               {
                 "bg-hijau text-putih": pathname === link.href,
               },
