@@ -30,7 +30,7 @@ export default function Navigation() {
         </div>
       </div>
       <div className="fixed top-0 left-0 right-0 z-20 mx-auto bg-putih p-4 max-w-[420px]">
-        <p className="pt-1 pl-12 text-left font-medium">Homstay Langit Senja</p>
+        <p className="pt-1 pl-12 text-left font-bold">Homstay Langit Senja</p>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ export default function Header() {
             <BsArrowLeftShort color="#000" size={32} />
           </div>
         </Link>
-        <p className="py-1 pl-3 text-hitam text-lg font-bold text-center">Select Date</p>
+        <p className="py-1 pl-3 text-hitam text-lg font-bold text-center">Form Reservasi</p>
         <div className="flex-none p-0.5 rounded-full opacity-0">
           <BsArrowLeftShort color="#264C86" size={32} />
         </div>

@@ -19,7 +19,7 @@ export default function NumberOfGuest() {
   return (
     <div>
     <p className="text-sm font-bold mt-4 mb-2">Jumlah Tamu</p>
-    <div className="p-4 rounded-2xl border-[1px] border-biru3">
+    <div className="py-1 rounded-2xl border-[1px] border-biru3">
       <div className="flex py-2.5 justify-center gap-8">
         <div className="bg-hijau2 p-3 rounded-lg" onClick={decraseGuestCount} role="button">
           <HiMinus size={18} color="#009933" />
