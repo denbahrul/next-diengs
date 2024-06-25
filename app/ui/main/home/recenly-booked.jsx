@@ -1,4 +1,5 @@
 import RoomCard from "@/app/ui/main/room-card-list";
+import Link from "next/link";
 // async function getData() {
 //   const res = await fetch("http://localhost:8000/v1/homestays");
 //   // The return value is *not* serialized
@@ -19,7 +20,9 @@ export default async function RecenlyBooked() {
       <section className="mx-6 my-4">
         <div className="flex flex-row justify-between">
           <p className="font-semibold">Recenly Booked</p>
-          <p className="text-hijau">See all</p>
+          <Link href="/orders/completed">
+            <p className="text-hijau">See all</p>
+          </Link>
         </div>
         <RoomCard />
         <RoomCard />
