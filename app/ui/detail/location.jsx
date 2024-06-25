@@ -1,6 +1,6 @@
 export default function Location() {
     return (
-        <section className="px-3 py-5 pt-8">
+        <section className="px-5 py-5 pt-8">
         <h3 className="text-md mb-4 font-bold lg:text-xl">Lokasi</h3>
         <iframe
           className="w-full rounded-lg lg:h-56"

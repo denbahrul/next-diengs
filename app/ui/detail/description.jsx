@@ -2,7 +2,7 @@ import { HiStar, HiLocationMarker, HiOutlineBookmark } from "react-icons/hi";
 
 export default function Description() {
     return (
-      <section className="mx-3 pb-6">
+      <section className="mx-5 pb-6">
         <div className="mt-5 flex justify-between">
           <h2 className="text-xl font-bold lg:text-3xl">Homestay Langit Senja</h2>
           <div className="hidden rounded-lg border-0 bg-kuning px-6 py-2 lg:flex">

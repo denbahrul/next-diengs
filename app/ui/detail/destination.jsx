@@ -1,6 +1,6 @@
 export default function Destination() {
     return (
-      <section className="bg-putih px-3 py-5">
+      <section className="bg-putih px-5 py-5">
         <h3 className="text-md my-2 font-bold lg:text-xl">Destinasi Sekitar</h3>
         <div className="mt-3 flex justify-between">
           <div>
