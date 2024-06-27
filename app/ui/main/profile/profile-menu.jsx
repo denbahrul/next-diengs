@@ -7,6 +7,8 @@ import {
   HiOutlineUser,
 } from "react-icons/hi";
 import Link from "next/link";
+import LogoutButton from "./logout-button";
+import UndoBookmarkButton from "../undo-bookmark-button";
 
 const menus = [
   {
@@ -34,11 +36,6 @@ const menus = [
     href: "/profile/help",
     icon: HiOutlineQuestionMarkCircle,
   },
-  {
-    name: "Logout",
-    href: "",
-    icon: HiOutlineLogout,
-  },
 ];
 
 export default function ProfileMenu() {
@@ -47,13 +44,14 @@ export default function ProfileMenu() {
       {menus.map((menu) => {
         return (
           <Link key={menu.name} href={menu.href}>
-            <div className="my-6 flex">
+            <div className="m-6 flex">
               <menu.icon className="mr-4" size={24} />
               <p className="my-auto">{menu.name}</p>
             </div>
           </Link>
         );
       })}
+      <LogoutButton />
     </>
   );
 }
