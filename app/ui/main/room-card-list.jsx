@@ -1,5 +1,7 @@
 import { HiBookmark } from "react-icons/hi2";
 import Image from "next/image";
+import UndoBookmarkButton from "./undo-bookmark-button";
+
 export default function RoomCard({ image }) {
   return (
     <>
@@ -26,6 +28,7 @@ export default function RoomCard({ image }) {
             <span className="mx-auto -mt-1 text-[10px] text-abu2">/ night</span>
           </p>
           <HiBookmark className="mx-auto text-hijau" size={24} />
+          {/* <UndoBookmarkButton /> */}
         </div>
       </div>
     </>

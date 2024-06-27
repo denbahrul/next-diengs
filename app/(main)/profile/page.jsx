@@ -14,7 +14,7 @@ export default function Favorite() {
           <HiOutlineDotsCircleHorizontal size={24} className="my-auto" />
         </div>
       </nav>
-      <section className="mx-6">
+      <section className="">
         <ProfilePict />
         <ProfileMenu />
       </section>

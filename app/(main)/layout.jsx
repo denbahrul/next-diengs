@@ -1,4 +1,5 @@
 import BottomNavbar from "../ui/main/bottom-navbar";
+import ConfirmLogoutModal from "../ui/main/profile/logout-button";
 
 export default function RootLayout({ children }) {
   return (
@@ -8,6 +9,7 @@ export default function RootLayout({ children }) {
           {children}
           <div className="h-14 w-full"></div>
           <BottomNavbar />
+          {/* <ConfirmLogoutModal /> */}
         </section>
       </body>
     </html>
