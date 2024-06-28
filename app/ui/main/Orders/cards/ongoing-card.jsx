@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CancelBookingButton from "../cancel-book-button";
 export default function OngoingCard() {
   return (
     <>
@@ -21,9 +22,9 @@ export default function OngoingCard() {
           </div>
         </div>
         <div className="mt-4 flex flex-row border-t-[1px] border-abu pt-4">
-          <button className="mr-1 w-1/2 rounded-full border-2 border-hijau p-[6px] text-sm text-hijau">
-            Cancel Order
-          </button>
+          <div className="mr-1 w-1/2">
+            <CancelBookingButton />
+          </div>
           <button className="ml-1 w-1/2 rounded-full bg-hijau p-[6px] text-sm text-abu">
             View Ticket
           </button>
