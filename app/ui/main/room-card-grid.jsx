@@ -1,5 +1,5 @@
-import { HiBookmark } from "react-icons/hi2";
 import Image from "next/image";
+import UndoBookmarkButton from "./undo-bookmark-button";
 export default function RoomCardGrid({ image }) {
   return (
     <>
@@ -23,7 +23,7 @@ export default function RoomCardGrid({ image }) {
             <span className="text-[20px] font-bold text-hijau">$35</span>
             <span className="mx-auto -mt-1 text-[10px] text-abu2">/night</span>
           </p>
-          <HiBookmark className="text-hijau" size={24} />
+          <UndoBookmarkButton />
         </div>
       </div>
     </>

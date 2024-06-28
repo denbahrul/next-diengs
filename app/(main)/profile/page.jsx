@@ -2,7 +2,7 @@ import BackToPreviewsPage from "@/app/ui/main/bact-to-previews";
 import ProfileMenu from "@/app/ui/main/profile/profile-menu";
 import ProfilePict from "@/app/ui/main/profile/profile-pict";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
-export default function Favorite() {
+export default function Page() {
   return (
     <>
       <nav className="m-6 flex flex-row justify-between">

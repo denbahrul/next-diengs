@@ -27,8 +27,8 @@ export default function RoomCard({ image }) {
             <br />
             <span className="mx-auto -mt-1 text-[10px] text-abu2">/ night</span>
           </p>
-          <HiBookmark className="mx-auto text-hijau" size={24} />
-          {/* <UndoBookmarkButton /> */}
+          {/* <HiBookmark className="mx-auto text-hijau" size={24} /> */}
+          <UndoBookmarkButton />
         </div>
       </div>
     </>
