@@ -5,7 +5,7 @@ export default function PaymentHeader() {
   return (
     <div>
       <div className="flex p-4 ">
-        <Link href="homestay">
+        <Link href="./homestay">
           <div className="p-0.5 rounded-full opacity-90">
             <BsArrowLeftShort color="#000" size={32} />
           </div>
