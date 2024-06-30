@@ -1,13 +1,14 @@
-import Link from "next/link";
+'use client';
 import PaymentHeader from "@/app/ui/payment/payment-header";
-import PaymentMethod from "@/app/ui/payment/payment-method";
-import { IoMdRadioButtonOff, IoMdRadioButtonOn } from "react-icons/io";
-import { HiStar } from "react-icons/hi";
+import PaymentSucces from "@/app/ui/payment/payment-succes";
 
 export default function Payment() {
+  const confirm = () => { document.querySelector("#paymentSuccess").classList.remove("hidden")}
+  
   return (
     <div className="relative max-w-[420px] h-screen mx-auto bg-background">
       <PaymentHeader/>
+      <PaymentSucces/>
       <div className="mx-6">
         <div className="my-3 flex bg-putih rounded-xl p-4">
           <div className="w-16 h-16 rounded-lg bg-[url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')] bg-cover" />
@@ -81,11 +82,15 @@ export default function Payment() {
             <p className="text-hijau text-sm underline mt-2">Salin</p>
           </div>
         </div>
-        <Link href="/payment">
-          <div className="absolute inset-x-0 bottom-0 bg-hijau rounded-full mx-6 mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm">
-            <p className="text-putih text-center text-sm">Selanjutya</p>
-          </div>
-        </Link>
+        <div
+          className="absolute inset-x-0 bottom-0 bg-hijau rounded-full mx-6 mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm"
+          onClick={confirm}
+          onKeyPress={confirm}
+          role="button"
+          tabIndex="0"
+          >
+          <p className="text-putih text-center text-sm">Konfirmasi Pembayaran</p>
+        </div>
       </div>
     </div>
   );
