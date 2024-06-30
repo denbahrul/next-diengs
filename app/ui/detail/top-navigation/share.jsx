@@ -26,9 +26,9 @@ export default function Share() {
   return (
     <div
       id="shareOption"
-      className="fixed left-0 right-0 top-0 z-30 flex hidden h-full w-full items-center justify-center bg-[#000000a2]"
+      className="fixed max-w-[425px] m-auto left-0 right-0 top-0 z-30 flex hidden h-full w-full items-center justify-center bg-[#0006159d]"
     >
-      <div className="m-1 w-full max-w-[425px] rounded-lg bg-putih object-right-top p-4">
+      <div className="m-3 w-full rounded-lg bg-putih object-right-top p-4">
         <div
           className="flex cursor-pointer justify-end"
           onClick={closeImage}

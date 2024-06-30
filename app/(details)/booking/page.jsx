@@ -30,7 +30,7 @@ export default function BookPage() {
       </div>
       <div className="p-3 pb-4 mt-8 bg-putih justify-betweenw-6xl mx-auto">
         <p className="mb-3 text-center font-bold text-md text-hitam">Total: Rp.700.000</p>
-        <Link href="OrderPage">
+        <Link href="payment/payment-method">
           <div className="bg-hijau rounded-full mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm">
             <p className="text-putih text-center text-sm">Selanjutya</p>
           </div>

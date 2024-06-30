@@ -2,7 +2,7 @@ import { Be_Vietnam_Pro } from "next/font/google";
 import "./ui/globals.css";
 
 const vietnam = Be_Vietnam_Pro({
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
