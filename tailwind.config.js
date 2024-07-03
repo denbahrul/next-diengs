@@ -18,6 +18,7 @@ module.exports = {
       hitam: "#000000",
       abu: "#D9D9D9",
       abu2: "#526179",
+      abu3: "#F5F5F5",
       putih: "#FFFFFF",
       biru2: "#1976D2",
       biru3: "#E9EDF3",
