@@ -5,18 +5,38 @@ import { IoMdRadioButtonOff, IoMdRadioButtonOn } from "react-icons/io";
 
 export default function Payment() {
   return (
-    <div className="relative max-w-[420px] h-screen mx-auto">
-      <PaymentHeader/>
+    <div className="relative mx-auto h-screen max-w-[420px]">
+      <PaymentHeader />
       <div className="mx-6">
-        <p className="font-semibold text-base mb-4">Metode Pembayaran</p>
-        <PaymentMethod img="../logo-dana.png" name="Dana" icon={<IoMdRadioButtonOn size={24} color="#009933"/>}/>
-        <PaymentMethod img="../logo-dana.png" name="Gopay" icon={<IoMdRadioButtonOff size={24} color="#009933"/>}/>
-        <PaymentMethod img="../BANK BRI.png" name="BRI Virtual Account" icon={<IoMdRadioButtonOff size={24} color="#009933"/>}/>
-        <PaymentMethod img="../logo-dana.png" name="Mandiri Virtual Account" icon={<IoMdRadioButtonOff size={24} color="#009933"/>}/>
-        <PaymentMethod img="../logo-dana.png" name="Alfamart" icon={<IoMdRadioButtonOff size={24} color="#009933"/>}/>
+        <p className="mb-4 text-base font-semibold">Metode Pembayaran</p>
+        <PaymentMethod
+          img="../logo-dana.png"
+          name="Dana"
+          icon={<IoMdRadioButtonOn size={24} color="#009933" />}
+        />
+        <PaymentMethod
+          img="../logo-dana.png"
+          name="Gopay"
+          icon={<IoMdRadioButtonOff size={24} color="#009933" />}
+        />
+        <PaymentMethod
+          img="../BANK BRI.png"
+          name="BRI Virtual Account"
+          icon={<IoMdRadioButtonOff size={24} color="#009933" />}
+        />
+        <PaymentMethod
+          img="../logo-dana.png"
+          name="Mandiri Virtual Account"
+          icon={<IoMdRadioButtonOff size={24} color="#009933" />}
+        />
+        <PaymentMethod
+          img="../logo-dana.png"
+          name="Alfamart"
+          icon={<IoMdRadioButtonOff size={24} color="#009933" />}
+        />
         <Link href="/payment">
-          <div className="absolute inset-x-0 bottom-0 bg-hijau rounded-full mx-6 mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm">
-            <p className="text-putih text-center text-sm">Selanjutya</p>
+          <div className="absolute inset-x-0 bottom-0 mx-6 mb-5 mt-2 rounded-full bg-hijau px-10 py-3 shadow-sm shadow-hijau">
+            <p className="text-center text-sm text-putih">Selanjutya</p>
           </div>
         </Link>
       </div>

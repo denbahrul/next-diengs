@@ -3,6 +3,7 @@ import RecomendationEtc from "../ui/main/home/recomendation-etc";
 import Image from "next/image";
 import { HiOutlineBookmark, HiOutlineBell } from "react-icons/hi2";
 import Link from "next/link";
+import { HiOutlineSearch } from "react-icons/hi";
 
 export default function Home() {
   return (
@@ -27,10 +28,12 @@ export default function Home() {
           </div>
         </div>
         <p className="my-6 text-3xl font-semibold">Hello, Traveller 👋</p>
-        <Link href="/search">
-          <p className="w-full rounded-xl bg-abu p-3 text-sm text-abu2">
-            Search
-          </p>
+        <Link
+          href="/search"
+          className="bg-abu3 flex w-full flex-row justify-items-start rounded-xl p-4"
+        >
+          <HiOutlineSearch scale={24} className="my-auto mr-2 text-abu" />
+          <p className="text-sm text-abu">Search</p>
         </Link>
       </header>
       <section>

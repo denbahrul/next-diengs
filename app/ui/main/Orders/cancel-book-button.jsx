@@ -37,14 +37,13 @@ function ConfirmCancelBookingModal({ isOpen, closeModalHandler, id_booking }) {
         <div className="flex flex-row-reverse justify-between">
           <Link
             //change double quotes to backtick later
-            href="/orders/ongoing/cancel/${id_booking}"
+            href="/orders/cancel/${id_booking}"
             className="my-3 ml-2 w-1/2"
           >
             <button className="w-full rounded-3xl bg-hijau p-4 text-sm font-medium text-hijau2 shadow-lg shadow-hijau2">
               Yes, Continue
             </button>
           </Link>
-
           <button
             onClick={closeModalHandler}
             className="my-3 mr-2 w-1/2 rounded-3xl bg-hijau2 p-4 text-sm font-medium text-hijau"
