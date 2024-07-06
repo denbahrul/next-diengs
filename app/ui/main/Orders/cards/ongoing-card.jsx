@@ -25,7 +25,7 @@ export default function OngoingCard() {
           <div className="mr-1 w-1/2">
             <CancelBookingButton />
           </div>
-          <button className="ml-1 w-1/2 rounded-full bg-hijau p-[6px] text-sm text-abu">
+          <button className="ml-1 w-1/2 rounded-full bg-hijau p-[6px] text-sm text-hijau2">
             View Ticket
           </button>
         </div>
