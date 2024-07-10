@@ -43,22 +43,3 @@ export default function CancelPopupMassage({ isOpen }) {
     </div>
   );
 }
-
-// export default function CancelPopupMassageButton() {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   const openModalHandler = () => {
-//     setIsOpen(true);
-//   };
-
-//   return (
-//     <>
-//       <div onClick={openModalHandler}>
-//         <button className="mb-9 w-full rounded-3xl bg-hijau p-4 text-center text-sm font-medium text-hijau2 shadow-xl shadow-hijau2">
-//           Continue
-//         </button>
-//       </div>
-//       <CancelPopupMassage isOpen={isOpen} />
-//     </>
-//   );
-// }

@@ -1,5 +1,20 @@
+"use client";
+import Filters from "@/app/ui/main/search/filters";
 import { HiOutlineFilter, HiOutlineSearch } from "react-icons/hi";
-export default function Favorite() {
+import { useState } from "react";
+
+export default function Page() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModalHandler = () => {
+    setIsOpen(true);
+  };
+
+  const closeModalHandler = () => {
+    setIsOpen(false);
+    event.preventDefault();
+  };
+
   return (
     <>
       <header className="relative m-6 flex items-center">
@@ -10,9 +25,16 @@ export default function Favorite() {
           placeholder="Search"
           autoFocus
         />
-        <HiOutlineFilter scale={24} className="absolute right-4 text-hijau" />
+        <HiOutlineFilter
+          onClick={openModalHandler}
+          scale={24}
+          className="absolute right-4 cursor-pointer text-hijau"
+        />
+        <Filters isOpen={isOpen} closeModalHandler={closeModalHandler} />
       </header>
-      <section></section>
+      <section>
+
+      </section>
     </>
   );
 }
