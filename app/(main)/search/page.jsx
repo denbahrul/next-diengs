@@ -10,7 +10,7 @@ export default function Page() {
     setIsOpen(true);
   };
 
-  const closeModalHandler = () => {
+  const closeModalHandler = (event) => {
     setIsOpen(false);
     event.preventDefault();
   };
@@ -21,7 +21,7 @@ export default function Page() {
         <HiOutlineSearch scale={24} className="absolute left-4 text-hijau" />
         <input
           type="text"
-          className="w-full rounded-xl bg-abu3 p-4 pl-10 pr-10 text-sm text-abu focus:bg-hijau2 focus:text-hitam focus:outline-hijau"
+          className="w-full rounded-xl border-transparent bg-abu3 p-4 pl-10 pr-10 text-sm text-abu focus:border-transparent focus:bg-hijau2 focus:text-hitam focus:outline-hijau focus:ring-0"
           placeholder="Search"
           autoFocus
         />
@@ -32,9 +32,7 @@ export default function Page() {
         />
         <Filters isOpen={isOpen} closeModalHandler={closeModalHandler} />
       </header>
-      <section>
-
-      </section>
+      <section></section>
     </>
   );
 }

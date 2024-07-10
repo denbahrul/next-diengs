@@ -130,7 +130,7 @@ export default function Filters({ isOpen, closeModalHandler }) {
                 <label key={facilitiesItemValue} className="">
                   <input
                     type="checkbox"
-                    className="form-checkbox h-5 w-5 rounded-md text-hijau"
+                    className="form-checkbox h-5 w-5 rounded-md border-transparent text-hijau focus:border-transparent focus:ring-0"
                   />
                   &nbsp; {facilitiesItemText}
                 </label>
