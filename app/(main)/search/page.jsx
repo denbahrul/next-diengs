@@ -32,7 +32,9 @@ export default function Page() {
         />
         <Filters isOpen={isOpen} closeModalHandler={closeModalHandler} />
       </header>
-      <section></section>
+      <section>
+
+      </section>
     </>
   );
 }

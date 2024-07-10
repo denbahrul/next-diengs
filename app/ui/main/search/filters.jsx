@@ -1,5 +1,6 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
 import clsx from "clsx";
+import PriceRangeSlider from "./price-rang";
 
 const radioItems = [
   {
@@ -17,6 +18,52 @@ const radioItems = [
   {
     text: "Kawah Sikidang",
     value: "kawah-sikidang",
+  },
+];
+
+const categoriesItems = [
+  {
+    text: "Hotel",
+    value: "hotel",
+  },
+  {
+    text: "Homestay",
+    value: "homestay",
+  },
+  {
+    text: "Cabin",
+    value: "cabin",
+  },
+  {
+    text: "Glamping",
+    value: "glamping",
+  },
+];
+
+const facilitiesItems = [
+  {
+    text: "Shower",
+    value: "shower",
+  },
+  {
+    text: "Parking lot",
+    value: "parking-lot",
+  },
+  {
+    text: "Towel",
+    value: "towel",
+  },
+  {
+    text: "Wifi",
+    value: "wifi",
+  },
+  {
+    text: "Smart TV",
+    value: "smart-tv",
+  },
+  {
+    text: "AC",
+    value: "ac",
   },
 ];
 
@@ -63,28 +110,32 @@ export default function Filters({ isOpen, closeModalHandler }) {
             })}
           </div>
           <p className="font-bold">Price Range</p>
+          <div className="mt-4 flex w-full justify-between text-xs">
+            <span>100rb</span>
+            <span>1jt</span>
+          </div>
           <input
             type="range"
-            name="price-range"
-            id="price-range"
-            min={50}
-            max={500}
-            className="my-4 w-full border-hijau"
+            min={0}
+            max="100"
+            className="mb-4 w-full"
+            // step="25"
           />
           <p className="font-bold">Facilities</p>
-          <div className="my-4">
-            <input type="checkbox" name="wifi" id="wifi" className="" />
-            <label htmlFor="wifi" className="mr-2">
-              {" "}
-              Wifi
-            </label>
-            <input
-              type="checkbox"
-              name="hot-shower"
-              id="hot-shower"
-              className=""
-            />
-            <label htmlFor="wifi"> Hot Shower</label>
+          <div className="my-4 grid grid-cols-3 gap-4">
+            {facilitiesItems.map((facilitiesItem) => {
+              const facilitiesItemText = facilitiesItem.text;
+              const facilitiesItemValue = facilitiesItem.value;
+              return (
+                <label key={facilitiesItemValue} className="">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox h-5 w-5 rounded-md text-hijau"
+                  />
+                  &nbsp; {facilitiesItemText}
+                </label>
+              );
+            })}
           </div>
           <div className="flex justify-between">
             <button
