@@ -31,24 +31,58 @@ export default function Favorite() {
           <h2 className="my-auto font-bold">My Bookmark</h2>
         </div>
         <div className="flex text-abu2">
-          <HiOutlineQueueList
+          {(view === "list" && (
+            <HiQueueList
+              onClick={changeListViewHandler}
+              size={24}
+              className={clsx("my-auto mr-4 text-abu2", {
+                "text-hijau": view === "list",
+              })}
+            />
+          )) || (
+            <HiOutlineQueueList
+              onClick={changeListViewHandler}
+              size={24}
+              className={clsx("my-auto mr-4 text-abu2", {
+                "text-hijau": view === "list",
+              })}
+            />
+          )}
+          {/* <HiOutlineQueueList
             onClick={changeListViewHandler}
             size={24}
             className={clsx("my-auto mr-4 text-abu2", {
               "text-hijau": view === "list",
             })}
-          />
-          <HiOutlineViewGrid
+          /> */}
+          {(view === "grid" && (
+            <HiViewGrid
+              onClick={changeGridViewHandler}
+              size={24}
+              className={clsx("my-auto text-abu2", {
+                "text-hijau": view === "grid",
+              })}
+            />
+          )) || (
+            <HiOutlineViewGrid
+              onClick={changeGridViewHandler}
+              size={24}
+              className={clsx("my-auto text-abu2", {
+                "text-hijau": view === "grid",
+              })}
+            />
+          )}
+          {/* <HiOutlineViewGrid
             onClick={changeGridViewHandler}
             size={24}
             className={clsx("my-auto text-abu2", {
               "text-hijau": view === "grid",
             })}
-          />
+          /> */}
         </div>
       </nav>
       <section className="mx-6">
-        {view === "list" ? <ListView /> : <GridView />}
+        {view === "grid" ? <GridView /> : <ListView />}
       </section>
     </>
   );
