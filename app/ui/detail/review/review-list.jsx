@@ -3,7 +3,7 @@ import Review from './review';
 
 export default function ReviewList() {
   return (
-    <section className="relative z-10 bg-putih px-5 pt-8">
+    <section className="relative z-10 bg-putih px-5">
       <div className="my-4 flex justify-between">
         <div className="flex justify-between">
           <p className="text-md mr-2 font-bold lg:text-xl">Ulasan</p>

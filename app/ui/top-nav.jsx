@@ -1,20 +1,18 @@
-import Link from 'next/link';
-import { BsArrowLeftShort } from 'react-icons/bs';
+"use client";
+import { useRouter } from "next/navigation";
+import { HiArrowNarrowLeft } from "react-icons/hi";
 
-export default function TopNav({title, link}) {
+export default function TopNav({title}) {
+  const router = useRouter();
+
   return (
-    <div>
-      <div className="flex p-4 ">
-        <Link href={link}>
-          <div className="p-0.5 rounded-full opacity-90">
-            <BsArrowLeftShort color="#000" size={32} />
-          </div>
-        </Link>
-        <p className="py-1 pl-3 text-hitam text-lg font-bold text-center">{title}</p>
-        <div className="flex-none p-0.5 rounded-full opacity-0">
-          <BsArrowLeftShort color="#264C86" size={32} />
-        </div>
+    <nav className="m-6 flex flex-row justify-between">
+      <div className="flex">
+        <button type="button" onClick={() => router.back()}>
+          <HiArrowNarrowLeft size={24} className="my-auto mr-4" />
+        </button>
+        <h2 className="my-auto font-bold text-lg">{title}</h2>
       </div>
-    </div>
+    </nav>
   );
 }

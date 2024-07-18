@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { BsEnvelope } from 'react-icons/bs';
+import { HiMail } from "react-icons/hi";
 import HeaderRegister from '@/app/ui/auth/Verification/HeaderRegister';
 
 export default function VerificationMethod() {
   return (
     <>
-      <HeaderRegister/>
+      <HeaderRegister title="Mode Verifikasi"/>
       <div className="container m-auto w-96 rounded-md yp-6">
         <div className="m-10">
           <p className="font-semibold mb-2 text-center">Pilih Metode Verifikasi</p>
@@ -13,7 +13,7 @@ export default function VerificationMethod() {
         </div>
         <Link href="/register/verification-code">
           <div className="flex px-4 py-3 rounded-lg shadow-md m-4">
-            <BsEnvelope color="#009933" size={38} />
+            <HiMail color="#009933" size={38} />
             <div className="ml-3">
               <p className="font-semibold text-sm">E-mail ke</p>
               <p className="text-abu2 text-xs">diengsdiengsdiengs@email.com</p>

@@ -1,12 +1,12 @@
 import Link from "next/link";
-import PaymentHeader from "@/app/ui/payment/payment-header";
 import PaymentMethod from "@/app/ui/payment/payment-method";
+import TopNav from "@/app/ui/top-nav";
 import { IoMdRadioButtonOff, IoMdRadioButtonOn } from "react-icons/io";
 
 export default function Payment() {
   return (
     <div className="relative mx-auto h-screen max-w-[420px]">
-      <PaymentHeader />
+      <TopNav title={"Pembayaran"}/>
       <div className="mx-6">
         <p className="mb-4 text-base font-semibold">Metode Pembayaran</p>
         <PaymentMethod

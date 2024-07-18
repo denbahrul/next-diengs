@@ -14,7 +14,7 @@ export default function Review() {
   // }
 
   return (
-    <div className="py-4 px-4 mb-2 bg-putih rounded-xl shadow-md">
+    <div className="py-4 px-4 mb-2 bg-putih rounded-2xl shadow-2xl shadow-background">
       <div className="mb-2 flex">
         <div className="mr-3 h-10 w-10 rounded-full bg-[url('https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')] bg-cover" />
         <div className="grow py-1">

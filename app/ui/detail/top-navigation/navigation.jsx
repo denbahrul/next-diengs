@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsArrowLeftShort, BsBoxArrowUp, BsBookmark } from "react-icons/bs";
+import { HiArrowNarrowLeft, HiOutlineBookmark, HiOutlineShare } from "react-icons/hi";
 
 export default function Navigation() {
   const seeImage = () => {
@@ -7,25 +8,25 @@ export default function Navigation() {
   };
 
   return (
-    <div className="lg:hidden">
+    <div>
       <div className="fixed top-0 right-0 left-0 z-30 mx-auto flex justify-between p-4 max-w-[420px]">
-        <Link href="HomePage">
-          <div className="rounded-full bg-putih p-0.5 opacity-90">
-            <BsArrowLeftShort size={29} />
+        <Link href="/">
+          <div className="rounded-full bg-putih p-1 opacity-90">
+            <HiArrowNarrowLeft size={24} />
           </div>
         </Link>
         <div className="flex">
-          <div className="mx-2 rounded-full bg-putih p-2 opacity-90">
-            <BsBookmark size={17} />
+          <div className="mx-2 rounded-full bg-putih p-1.5 opacity-90">
+            <HiOutlineBookmark size={20} />
           </div>
           <div 
-            className="rounded-full bg-putih p-2 opacity-90"
+            className="rounded-full bg-putih p-1.5 opacity-90"
             onClick={seeImage}
             onKeyPress={seeImage}
             role="button"
             tabIndex="0"
           >
-            <BsBoxArrowUp size={17} />
+            <HiOutlineShare size={20} />
           </div>
         </div>
       </div>

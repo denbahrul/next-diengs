@@ -15,12 +15,12 @@ export default function Password() {
     }
     
     return (
-        <div className="relative mb-5">
-          <HiLockClosed className="absolute top-3 left-3" color="#adadb5" size={20} />
-          <input className="bg-[#f7f7f7] py-3 px-10 w-full rounded-xl  text-sm focus:bg-[#dfffea] focus:ring-1 focus:ring-hijau focus:outline-none" type={type} name="" id="password" placeholder="Password"/>
+        <div className="relative flex items-center mb-5">
+          <HiLockClosed className="absolute left-3" color="#adadb5" size={20} />
+          <input className="bg-[#f7f7f7] py-3 px-12 w-full rounded-xl  text-sm focus:bg-[#dfffea] focus:ring-1 focus:ring-hijau focus:outline-none" type={type} name="" id="password" placeholder="Password"/>
           {type === 'password' ? 
-            <HiEye className="absolute top-3 right-3" color="#adadb5" size={20} onClick={handleShowHidePassword} /> 
-            : <HiEyeOff className="absolute top-3 right-3" color="#adadb5" size={20} onClick={handleShowHidePassword} />}
+            <HiEye className="absolute right-3" color="#adadb5" size={20} onClick={handleShowHidePassword} /> 
+            : <HiEyeOff className="absolute right-3" color="#adadb5" size={20} onClick={handleShowHidePassword} />}
         </div>
     )
 }

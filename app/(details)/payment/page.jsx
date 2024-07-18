@@ -1,27 +1,23 @@
 'use client';
-import PaymentHeader from "@/app/ui/payment/payment-header";
 import PaymentSucces from "@/app/ui/payment/payment-succes";
+import RoomCard from "@/app/ui/main/room-card-list";
+import TopNav from "@/app/ui/top-nav";
+import Link from "next/link";
 
 export default function Payment() {
   const confirm = () => { document.querySelector("#paymentSuccess").classList.remove("hidden")}
   
   return (
-    <div className="relative max-w-[420px] h-screen mx-auto bg-background">
-      <PaymentHeader/>
+    <div className="relative max-w-[420px] h-screen mx-auto bg-putih">
+      <TopNav title={"Pembayaran"}/>
       <PaymentSucces/>
       <div className="mx-6">
-        <div className="my-3 flex bg-putih rounded-xl p-4">
-          <div className="w-16 h-16 rounded-lg bg-[url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')] bg-cover" />
-            <div className="ml-4 mt-0.5">
-              <p className="text-sm font-bold">Homestay Langit Senja</p>
-              <p className="text-xs font-medium text-abu2">Bintang Standart Room</p>
-              <div className="flex mt-2">
-                <p className="text-xs font-bold text-hijau">Rp.500.000</p>
-                <p className="text-xs text-abu2">/malam</p>
-              </div>
-            </div>
+        <RoomCard/>
+        <div className="my-4 bg-putih rounded-2xl p-4 shadow-2xl shadow-background">
+        <div className="flex justify-between mb-4">
+            <p className="text-sm text-abu2">Type Kamar</p>
+            <p className="text-sm font-bold">Bintang Standart Room</p>
           </div>
-        <div className="my-4 bg-putih rounded-xl p-4">
           <div className="flex justify-between mb-4">
             <p className="text-sm text-abu2">Check in</p>
             <p className="text-sm font-bold">12 September 2024</p>
@@ -36,7 +32,7 @@ export default function Payment() {
           </div>
         </div>
 
-        <div className="my-4 bg-putih rounded-xl p-4">
+        <div className="my-4 bg-putih rounded-2xl p-4 shadow-2xl shadow-background">
           <div className="flex justify-between mb-4">
             <p className="text-sm text-abu2">3 Malam</p>
             <p className="text-sm font-bold">Rp. 1.500.000</p>
@@ -51,15 +47,17 @@ export default function Payment() {
           </div>
         </div>
 
-        <div className="my-4 bg-putih rounded-xl p-4 flex justify-between">
+        <div className="my-4 bg-putih rounded-2xl p-4 flex justify-between shadow-2xl shadow-background">
             <div className="flex justify-between">
               <img src="./BANK BRI.png" alt="logo" className="w-10 mr-2" />
               <p className="text-sm font-bold">BRI Virtual Account</p>
             </div>
-            <p className="text-hijau text-sm">Ubah</p>
+            <Link href="payment/payment-method">
+              <p className="text-hijau text-sm">Ubah</p>
+            </Link>
         </div>
 
-        <div className="my-4 bg-putih rounded-xl p-4">
+        <div className="my-4 bg-putih rounded-2xl p-4 shadow-2xl shadow-background">
           <div className="flex justify-between pb-3 border-b-[1px] border-biru3">
             <div>
               <p className="text-sm  font-bold">Bayar sebelum</p>
