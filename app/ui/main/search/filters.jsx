@@ -117,8 +117,8 @@ export default function Filters({ isOpen, closeModalHandler }) {
           <input
             type="range"
             min={0}
-            max="100"
-            className="mb-4 w-full"
+            max={100}
+            className="mb-4 w-full text-hijau"
             // step="25"
           />
           <p className="font-bold">Facilities</p>
@@ -130,7 +130,7 @@ export default function Filters({ isOpen, closeModalHandler }) {
                 <label key={facilitiesItemValue} className="">
                   <input
                     type="checkbox"
-                    className="form-checkbox h-5 w-5 rounded-md border-transparent text-hijau focus:border-transparent focus:ring-0"
+                    className="form-checkbox h-5 w-5 rounded-md border-transparent text-hijau ring-2 focus:border-transparent focus:ring-0"
                   />
                   &nbsp; {facilitiesItemText}
                 </label>
