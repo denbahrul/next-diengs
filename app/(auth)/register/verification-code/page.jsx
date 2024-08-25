@@ -5,7 +5,7 @@ import HeaderRegister from '@/app/ui/auth/Verification/HeaderRegister';
 export default function VerificationCode() {
   return (
     <>
-      <HeaderRegister/>
+      <HeaderRegister title="Kode Verifikasi"/>
       <div className="container m-auto w-96 rounded-md yp-6">
         <div className="mx-10 mt-10">
           <p className="font-semibold mb-2 text-center">Masukkan Kode Verifikasi</p>

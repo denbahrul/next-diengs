@@ -4,7 +4,7 @@ export default function Rules() {
   return (
     <section className="mx-5">
       <h3 className="text-md pb-4 pt-8 font-bold lg:text-xl">Ketentuan</h3>
-      <div className="flex justify-between rounded-md border border-abu2 px-8 py-4">
+      <div className="flex justify-between rounded-md border border-biru3 px-8 py-4">
         <div className="mx-auto text-center">
           <p className="font-sm">Check-in</p>
           <p className="text-xs font-light text-abu2">Mulai 14.00 WIB</p>
