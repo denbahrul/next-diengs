@@ -12,9 +12,9 @@ export default function Login() {
           <Email/>
           <Password />
           <p className="text-end text-xs mb-5 text-hijau">Lupa Password?</p>
-          <Link href="/">
+          {/* <Link href="/"> */}
             <button className="w-full p-3 bg-hijau rounded-full mb-5 text-putih hover:shadow-sm hover:shadow-hijau transition-all" type="submit">Masuk</button>
-          </Link>
+          {/* </Link> */}
         </form>
         <p className="text-center text-sm mb-5">atau</p>
         <GoogleAuth />

@@ -8,7 +8,7 @@ export default function Payment() {
   const confirm = () => { document.querySelector("#paymentSuccess").classList.remove("hidden")}
   
   return (
-    <div className="relative max-w-[420px] h-screen mx-auto bg-putih">
+    <div className="relative max-w-[420px] mx-auto bg-putih">
       <TopNav title={"Pembayaran"}/>
       <PaymentSucces/>
       <div className="mx-6">
@@ -81,7 +81,7 @@ export default function Payment() {
           </div>
         </div>
         <div
-          className="absolute inset-x-0 bottom-0 bg-hijau rounded-full mx-6 mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm"
+          className="bg-hijau rounded-full mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm"
           onClick={confirm}
           onKeyPress={confirm}
           role="button"
