@@ -4,28 +4,20 @@ import GoogleAuth from "../Google/GoogleAuth";
 import Email from "../form/Email";
 import Password from "../form/Password";
 import useInput from "@/hooks/useInput";
-import { signIn } from "next-auth/react";
-import { redirect } from "next/navigation";
+import { login } from "@/data/fetch-api";
 
 export default function Login() {
     const [email, onEmailChange] = useInput('');
     const [password, onPasswordChange] = useInput('');
     
     async function onLoginHandler(event) {
-      console.log("test");
       event.preventDefault();
 
-      const result = await signIn('credentials', {
-        redirect: false,
-        email,
-        password
-      });
-
-      if (result.error) {
-        console.error('Login Failed', result.error);
-      } else {
-        console.log('Login successfull', result);
-        redirect('/dashboard');
+      try {
+        const data = await login(email, password);
+        console.log('Login succesfull', data);
+      } catch(error) {
+        console.error('Login failed', error);
       }
     }
 
