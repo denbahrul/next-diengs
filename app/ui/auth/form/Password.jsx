@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { HiLockClosed, HiEye, HiEyeOff } from "react-icons/hi";
 
-export default function Password() {
+export default function Password({password, onPasswordChange}) {
     const [type, setType] = useState('password');
  
     const handleShowHidePassword = () => {
@@ -17,7 +17,15 @@ export default function Password() {
     return (
         <div className="relative flex items-center mb-5">
           <HiLockClosed className="absolute left-3" color="#adadb5" size={20} />
-          <input className="bg-[#f7f7f7] py-3 px-12 w-full rounded-xl  text-sm focus:bg-[#dfffea] focus:ring-1 focus:ring-hijau focus:outline-none" type={type} name="" id="password" placeholder="Password"/>
+          <input
+            className="form-input border-none bg-[#f7f7f7] py-3 px-12 w-full rounded-xl  text-sm focus:bg-[#dfffea] focus:ring-1 focus:ring-hijau focus:outline-none" 
+            type={type} 
+            name="" 
+            id="password" 
+            placeholder="Password"
+            onChange={onPasswordChange}
+            value={password}
+          />
           {type === 'password' ? 
             <HiEye className="absolute right-3" color="#adadb5" size={20} onClick={handleShowHidePassword} /> 
             : <HiEyeOff className="absolute right-3" color="#adadb5" size={20} onClick={handleShowHidePassword} />}
