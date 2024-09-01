@@ -1,7 +1,11 @@
 import BackToPreviewsPage from "@/app/ui/main/bact-to-previews";
 import Notification from "@/app/ui/main/notification/notification";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
-export default function Favorite() {
+import { auth } from "@/auth";
+import UserNotLogedIn from "@/app/ui/main/user-not-loged-in";
+export default async function Favorite() {
+  const session = await auth();
+
   return (
     <>
       <nav className="m-6 flex flex-row justify-between">
@@ -13,9 +17,16 @@ export default function Favorite() {
           <HiOutlineDotsCircleHorizontal size={24} className="my-auto" />
         </div>
       </nav>
-      <section className="mx-6">
+      {!session ? (
+        <UserNotLogedIn />
+      ) : (
+        <section className="mx-6">
+          <Notification />
+        </section>
+      )}
+      {/* <section className="mx-6">
         <Notification />
-      </section>
+      </section> */}
     </>
   );
 }

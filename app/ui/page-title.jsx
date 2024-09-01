@@ -1,5 +1,5 @@
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
-import BackToPreviewsPage from "./ui/main/bact-to-previews";
+import BackToPreviewsPage from "./main/bact-to-previews";
 
 export default function PageTitle({ title }) {
   return (
