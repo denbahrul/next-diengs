@@ -5,7 +5,6 @@ export default function GoogleAuth() {
   return (
     <form
       action={async () => {
-        "use server";
         await signIn("google", {
           redirectTo: "/profile",
         });
