@@ -6,8 +6,7 @@ import { addDays } from 'date-fns';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import id from 'date-fns/locale/id';
-import { LuCalendarDays } from "react-icons/lu";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiArrowNarrowRight, HiOutlineCalendar  } from "react-icons/hi";
 
 export default function DatePicker() {
   const [selectionRange, setSelectionRange] = useState({
@@ -53,7 +52,7 @@ export default function DatePicker() {
               day: 'numeric'
             })}
           </span>
-          <LuCalendarDays size={20} />
+          <HiOutlineCalendar  size={20} />
         </div>
         <div className='flex items-center px-4'> 
           <HiArrowNarrowRight />
@@ -65,7 +64,7 @@ export default function DatePicker() {
               day: 'numeric'
             })}
           </span>
-          <LuCalendarDays size={20} />
+          <HiOutlineCalendar  size={20} />
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function Destination() {
           <div className="p-2">
             <p>
               <a
-                className="rounded-md bg-hijau px-9 py-0.5 text-xs font-extralight text-putih"
+                className="rounded-full bg-hijau px-4 py-1 text-xs font-extralight text-putih"
                 href="https://maps.app.goo.gl/J339rb55jAFCWk4Y7"
               >
                 Lihat
@@ -26,7 +26,7 @@ export default function Destination() {
           <div className="p-2">
             <p>
               <a
-                className="rounded-md bg-hijau px-9 py-0.5 text-xs font-extralight text-putih"
+                className="rounded-full bg-hijau px-4 py-1 text-xs font-extralight text-putih"
                 href="https://maps.app.goo.gl/J339rb55jAFCWk4Y7"
               >
                 Lihat
@@ -42,7 +42,7 @@ export default function Destination() {
           <div className="p-2">
             <p>
               <a
-                className="rounded-md bg-hijau px-9 py-0.5 text-xs font-extralight text-putih"
+                className="rounded-full bg-hijau px-4 py-1 text-xs font-extralight text-putih"
                 href="https://maps.app.goo.gl/J339rb55jAFCWk4Y7"
               >
                 Lihat
