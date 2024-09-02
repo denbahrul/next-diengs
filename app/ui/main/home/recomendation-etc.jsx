@@ -1,6 +1,9 @@
 import BigCard from "./big-card";
+import { getHomestays } from "@/app/api/data/homestay";
 
-export default function RecomendationEtc() {
+export default async function RecomendationEtc() {
+  const homestays = await getHomestays();
+
   return (
     <>
       <div class="mb-4 ml-5 flex flex-col">
@@ -27,12 +30,16 @@ export default function RecomendationEtc() {
       <div class="ml-3 flex flex-col">
         <div class="no-scrollbar flex overflow-x-scroll">
           <div class="flex flex-nowrap">
-            <BigCard />
-            <BigCard />
-            <BigCard />
-            <BigCard />
-            <BigCard />
-            <BigCard />
+            {homestays.data.map((homestay) => (
+              <BigCard
+                key={homestay.id}
+                name={homestay.name}
+                image={homestay.main_image}
+                location={homestay.location}
+                price={homestay.price}
+                rating={homestay.rating}
+              />
+            ))}
           </div>
         </div>
       </div>

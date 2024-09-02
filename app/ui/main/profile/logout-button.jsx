@@ -2,6 +2,7 @@
 import { HiOutlineLogout } from "react-icons/hi";
 import { useState } from "react";
 import clsx from "clsx";
+import { signOut } from "next-auth/react";
 
 function ConfirmLogoutModal({ isOpen, closeModalHandler }) {
   return (
@@ -30,7 +31,10 @@ function ConfirmLogoutModal({ isOpen, closeModalHandler }) {
           Are you sure you want to logout?
         </p>
         <div className="flex flex-col">
-          <button className="mt-4 rounded-3xl bg-hijau p-3 text-sm font-medium text-hijau2">
+          <button
+            onClick={() => signOut()}
+            className="mt-4 rounded-3xl bg-hijau p-3 text-sm font-medium text-hijau2"
+          >
             Yes, Logout
           </button>
           <button

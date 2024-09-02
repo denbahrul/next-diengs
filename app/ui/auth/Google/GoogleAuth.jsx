@@ -1,13 +1,23 @@
 import { FcGoogle } from "react-icons/fc";
+import { signIn } from "@/auth";
 
 export default function GoogleAuth() {
   return (
-    <button
-      type="button"
-      className="flex w-full justify-center rounded-full ring-1 ring-abu p-3 text-sm transition-all hover:shadow-sm hover:shadow-abu"
+    <form
+      action={async () => {
+        "use server";
+        await signIn("google", {
+          redirectTo: "/profile",
+        });
+      }}
     >
-      <FcGoogle size={24} />
-      <span className="my-auto ml-2 ">Lanjutkan Dengan Google</span>
-    </button>
+      <button
+        type="submit"
+        className="flex w-full justify-center rounded-xl p-3 text-sm ring-1 ring-abu transition-all hover:shadow-sm hover:shadow-abu"
+      >
+        <FcGoogle size={24} />
+        <span className="my-auto ml-2">Lanjutkan Dengan Google</span>
+      </button>
+    </form>
   );
 }
