@@ -6,7 +6,7 @@ import { IoMdRadioButtonOff, IoMdRadioButtonOn } from "react-icons/io";
 export default function Payment() {
   return (
     <div className="relative mx-auto h-screen max-w-[420px]">
-      <TopNav title={"Pembayaran"}/>
+      <TopNav title={"Pembayaran"} />
       <div className="mx-6">
         <p className="mb-4 text-base font-semibold">Metode Pembayaran</p>
         <PaymentMethod
@@ -34,12 +34,13 @@ export default function Payment() {
           name="Alfamart"
           icon={<IoMdRadioButtonOff size={24} color="#009933" />}
         />
-        <Link href="/payment">
-        {/* fixed bottom-0 flex w-full max-w-[420px] justify-between bg-putih px-12 py-4 */}
-          <div className="fixed inset-x-0 bottom-0 mx-6 mb-4 mt-2 rounded-full bg-hijau px-10 py-3 shadow-sm shadow-hijau">
-            <p className="text-center text-sm text-putih">Selanjutya</p>
-          </div>
-        </Link>
+        <div className="fixed inset-x-0 bottom-0 mx-auto mb-4 mt-2 max-w-[412px] px-4">
+          <Link href="/payment">
+            <div className="rounded-full bg-hijau px-10 py-3 shadow-sm shadow-hijau">
+              <p className="text-center text-sm text-putih">Selanjutnya</p>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
