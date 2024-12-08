@@ -1,10 +1,11 @@
 import { HiBookmark } from "react-icons/hi2";
 import Image from "next/image";
 import UndoBookmarkButton from "./undo-bookmark-button";
+import Link from "next/link";
 
 export default function RoomCard({ image }) {
   return (
-    <>
+    <Link href={"/homestay"}>
       <div className="my-4 flex rounded-2xl bg-putih p-4 shadow-2xl shadow-background">
         <Image
           className="m-auto aspect-square w-3/12 rounded-2xl object-cover"
@@ -31,6 +32,6 @@ export default function RoomCard({ image }) {
           <UndoBookmarkButton />
         </div>
       </div>
-    </>
+    </Link>
   );
 }

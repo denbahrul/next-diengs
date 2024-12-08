@@ -1,8 +1,9 @@
 import { HiOutlineBookmark } from "react-icons/hi2";
 import Image from "next/image";
+import Link from "next/link";
 export default function BigCard({ name, image, location, price, rating }) {
   return (
-    <>
+    <Link href={"/homestay"}>
       <div className="relative mx-3 aspect-[3/4] w-72">
         {/* <Image
           className="m-auto aspect-[3/4] w-full rounded-[40px] object-cover brightness-[55%]"
@@ -32,6 +33,6 @@ export default function BigCard({ name, image, location, price, rating }) {
           </div>
         </div>
       </div>
-    </>
+    </Link>
   );
 }

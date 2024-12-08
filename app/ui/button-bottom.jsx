@@ -1,7 +1,9 @@
-export default function ButtonBottom({name}) {
-    return (
-        <div className="fixed inset-x-0 bottom-0 bg-hijau rounded-full mx-6 mb-5 mt-2 py-3 px-10 shadow-hijau shadow-sm">
-            <p className="text-putih text-center text-sm">{name}</p>
-        </div>
-    )
+export default function ButtonBottom({ name }) {
+  return (
+    <div className="fixed inset-x-0 bottom-0 mx-auto mb-4 mt-2 max-w-[412px] px-4">
+      <div className="rounded-full bg-hijau px-10 py-3 shadow-sm shadow-hijau">
+        <p className="text-center text-sm text-putih">{name}</p>
+      </div>
+    </div>
+  );
 }
